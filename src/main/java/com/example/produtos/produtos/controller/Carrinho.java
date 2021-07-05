@@ -68,7 +68,7 @@ public class Carrinho {
     @GetMapping("finalizarCompra")
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
         request.getSession().invalidate();
-        response.sendRedirect("/");
+        response.sendRedirect("/cliente");
 
 
 
